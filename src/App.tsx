@@ -1,22 +1,28 @@
 import React from 'react';
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <main>
+        <section id="home">
+          {/* Home section content will go here */}
+        </section>
+        <section id="about">
+          {/* About section content will go here */}
+        </section>
+        <section id="projects">
+          {/* Projects section content will go here */}
+        </section>
+        <section id="skills">
+          {/* Skills section content will go here */}
+        </section>
+        <section id="contact">
+          {/* Contact section content will go here */}
+        </section>
+      </main>
     </div>
   );
 }
