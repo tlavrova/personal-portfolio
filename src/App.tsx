@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -11,9 +12,7 @@ function App() {
       <main>
         <Home />
         <About />
-        <section id="projects">
-          {/* Projects section content will go here */}
-        </section>
+        <Projects />
         <section id="skills">
           {/* Skills section content will go here */}
         </section>
