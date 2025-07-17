@@ -1,0 +1,109 @@
+.about-section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+}
+
+.about-section h2:after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background-color: #61dafb;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: justify;
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.skills-icons svg {
+    font-size: 3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #666;
+}
+
+/* Style for the TypeScript SVG logo */
+.icon-image {
+    width: 40px;
+    height: 47px;
+    transition: transform 0.3s ease;
+    /*vertical-align: middle;*/
+}
+
+.icon-image:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* Individual icon colors */
+.skills-icons svg[data-icon="html5"] {
+    color: #e34c26;
+}
+
+.skills-icons svg[data-icon="css3-alt"] {
+    color: #264de4;
+}
+
+.skills-icons svg[data-icon="js-square"] {
+    color: #f7df1e;
+}
+
+.skills-icons svg[data-icon="react"] {
+    color: #61dafb;
+}
+
+.skills-icons svg[data-icon="angular"] {
+    color: #dd0031;
+}
+
+.skills-icons svg[data-icon="git-alt"] {
+    color: #f34f29;
+}
+
+.skills-icons svg:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 15px;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .skills-icons {
+        gap: 20px;
+    }
+
+    .skills-icons svg {
+        font-size: 2.5rem;
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
+import About from './components/About';
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
       <Header />
       <main>
         <Home />
-        <section id="about">
-          {/* About section content will go here */}
-        </section>
+        <About />
         <section id="projects">
           {/* Projects section content will go here */}
         </section>
