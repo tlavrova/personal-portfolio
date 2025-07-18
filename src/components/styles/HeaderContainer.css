@@ -6,8 +6,10 @@
   padding: 1rem 2rem;
   background-color: var(--color-header-bg);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
