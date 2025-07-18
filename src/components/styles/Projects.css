@@ -1,6 +1,10 @@
 /* Projects Section Styling */
 .projects-section {
     padding: 80px 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.projects-inner {
     max-width: 1200px;
     margin: 0 auto;
 }
