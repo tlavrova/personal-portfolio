@@ -8,9 +8,9 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App min-h-screen bg-gray-100">
       <Header />
-      <main>
+      <main className="container mx-auto px-4 py-8">
         <Home />
         <About />
         <Projects />
