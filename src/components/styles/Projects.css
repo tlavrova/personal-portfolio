@@ -101,14 +101,14 @@
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    color: var(--color-link);
+    color: #3498db; /* Updated to consistent blue */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
 .project-link:hover {
-    color: var(--color-link-hover);
+    color: #2980b9; /* Updated to consistent hover blue */
 }
 
 /* Responsive adjustments */
