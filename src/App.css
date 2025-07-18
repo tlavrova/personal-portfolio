@@ -24,12 +24,8 @@ section#projects {
   background-color: #f8f9fa;
 }
 
-section#skills {
-  background-color: #ffffff;
-}
-
 section#contact {
-  background-color: #f8f9fa;
+  background-color: #ffffff; /* Changed from #f8f9fa to match the About section */
 }
 
 /* Responsive adjustments */
