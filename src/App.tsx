@@ -14,9 +14,6 @@ function App() {
         <Home />
         <About />
         <Projects />
-        <section id="skills">
-          {/* Skills section content will go here */}
-        </section>
         <Contact />
       </main>
     </div>
