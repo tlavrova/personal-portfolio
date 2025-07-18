@@ -80,8 +80,10 @@
 
 .social-links {
     display: flex;
-    gap: 15px;
+    flex-direction: row;
+    gap: 20px;
     margin-top: 30px;
+    justify-content: flex-start;
 }
 
 .social-links a {

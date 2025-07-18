@@ -122,10 +122,10 @@ const Contact: React.FC = () => {
                     </div>
 
                     <div className="social-links">
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href="https://linkedin.com/in/tlavrova230" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
-                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <a href="https://github.com/tlavrova" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <FontAwesomeIcon icon={faGithub} />
                         </a>
                     </div>
