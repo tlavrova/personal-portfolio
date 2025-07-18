@@ -17,7 +17,6 @@ const Header: React.FC = () => {
     <HeaderContainer>
       <Logo>My Portfolio</Logo>
       <div className="header-right">
-        <ThemeToggle />
         <HamburgerMenu onClick={toggleMenu} />
       </div>
       <NavMenu isOpen={isMenuOpen}>
@@ -26,6 +25,9 @@ const Header: React.FC = () => {
         <NavLink href="#projects">Projects</NavLink>
         <NavLink href="#testimonials">Testimonials</NavLink>
         <NavLink href="#contact">Contact</NavLink>
+        <div className="nav-theme-toggle">
+          <ThemeToggle />
+        </div>
       </NavMenu>
     </HeaderContainer>
   );

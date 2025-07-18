@@ -1,6 +1,6 @@
 .footer-container {
-  background-color: var(--color-footer-bg);
-  color: var(--color-text);
+  background-color: #2d3748; /* Restored darker background for better contrast */
+  color: #e2e8f0; /* Light text color for better visibility */
   padding: 2rem 1rem;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .footer-section h4 {
-  color: var(--color-text);
+  color: #ffffff; /* Brighter white for better contrast */
   font-size: 1.2rem;
   margin-bottom: 1rem;
   position: relative;
@@ -33,7 +33,7 @@
   bottom: -5px;
   width: 50px;
   height: 2px;
-  background-color: var(--color-primary);
+  background-color: #3498db; /* Updated to match the consistent blue */
 }
 
 .footer-nav {
@@ -42,14 +42,14 @@
 }
 
 .footer-nav a, .footer-social-links a {
-  color: #cbd5e0;
+  color: #cbd5e0; /* Lighter color for better visibility */
   text-decoration: none;
   margin-bottom: 0.5rem;
   transition: color 0.3s ease;
 }
 
 .footer-nav a:hover, .footer-social-links a:hover {
-  color: #4299e1;
+  color: #3498db; /* Updated to match the consistent blue */
 }
 
 .footer-social-links {
@@ -62,6 +62,7 @@
   padding-top: 1rem;
   border-top: 1px solid #4a5568;
   font-size: 0.9rem;
+  color: #cbd5e0; /* Ensuring copyright text is visible */
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,13 @@
 /* NavMenu styles */
 .nav-menu {
   display: flex;
+  align-items: center;
+}
+
+.nav-theme-toggle {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -26,5 +33,9 @@
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
+  }
+
+  .nav-theme-toggle {
+    margin: 1rem auto;
   }
 }
