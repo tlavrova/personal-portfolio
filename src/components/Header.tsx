@@ -4,6 +4,7 @@ import Logo from './styles/Logo';
 import NavMenu from './styles/NavMenu';
 import NavLink from './styles/NavLink';
 import HamburgerMenu from './styles/HamburgerMenu';
+import ThemeToggle from './ThemeToggle';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -15,7 +16,10 @@ const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <Logo>My Portfolio</Logo>
-      <HamburgerMenu onClick={toggleMenu} />
+      <div className="header-right">
+        <ThemeToggle />
+        <HamburgerMenu onClick={toggleMenu} />
+      </div>
       <NavMenu isOpen={isMenuOpen}>
         <NavLink href="#home">Home</NavLink>
         <NavLink href="#about">About</NavLink>

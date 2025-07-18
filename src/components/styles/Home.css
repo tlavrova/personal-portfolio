@@ -5,7 +5,8 @@
   justify-content: space-between;
   padding: 2rem;
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background-color: var(--color-bg);
+  transition: background-color 0.3s ease;
 }
 
 .home-content {
@@ -17,25 +18,27 @@
 h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: var(--color-text);
 }
 
 h2 {
   font-size: 1.75rem;
   font-weight: 500;
-  color: #555;
+  color: var(--color-text);
+  opacity: 0.8;
   margin-bottom: 1.5rem;
 }
 
 .highlight {
-  color: #0066cc;
+  color: var(--color-primary);
 }
 
 .intro-text {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: #555;
+  color: var(--color-text);
+  opacity: 0.9;
 }
 
 .cta-buttons {
@@ -53,24 +56,28 @@ h2 {
 }
 
 .primary-btn {
-  background-color: #0066cc;
+  background-color: var(--color-primary);
   color: white;
-  border: 2px solid #0066cc;
+  border: 2px solid var(--color-primary);
 }
 
 .primary-btn:hover {
-  background-color: #0055aa;
-  border-color: #0055aa;
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .secondary-btn {
   background-color: transparent;
-  color: #0066cc;
-  border: 2px solid #0066cc;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .secondary-btn:hover {
   background-color: rgba(0, 102, 204, 0.1);
+}
+
+.dark .secondary-btn:hover {
+  background-color: rgba(108, 169, 255, 0.2);
 }
 
 .profile-image-container {
@@ -85,10 +92,15 @@ h2 {
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  background-color: #f0f0f0;
+  background-color: var(--color-card-bg);
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.dark .profile-image {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .profile-image img {
@@ -101,7 +113,7 @@ h2 {
 .placeholder-image {
   font-size: 4rem;
   font-weight: bold;
-  color: #0066cc;
+  color: var(--color-primary);
 }
 
 /* Responsive design */

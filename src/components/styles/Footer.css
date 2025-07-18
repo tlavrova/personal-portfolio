@@ -1,8 +1,7 @@
 .footer-container {
-  background-color: #2d3748;
-  color: #e2e8f0;
+  background-color: var(--color-footer-bg);
+  color: var(--color-text);
   padding: 2rem 1rem;
-  margin-top: 2rem;
 }
 
 .footer-content {
@@ -21,7 +20,7 @@
 }
 
 .footer-section h4 {
-  color: #ffffff;
+  color: var(--color-text);
   font-size: 1.2rem;
   margin-bottom: 1rem;
   position: relative;
@@ -34,7 +33,7 @@
   bottom: -5px;
   width: 50px;
   height: 2px;
-  background-color: #4299e1;
+  background-color: var(--color-primary);
 }
 
 .footer-nav {

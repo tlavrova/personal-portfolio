@@ -7,6 +7,7 @@ import portfolioPreview from '../assets/images/portfolio-preview.jpg';
 import recipeFinder from '../assets/images/recipe-finder.png';
 import weatherApp from '../assets/images/weather-app.png';
 import todoList from '../assets/images/todo-list.png';
+import { useTheme } from '../context/ThemeContext';
 
 // Define a type for project objects
 interface Project {
@@ -20,6 +21,8 @@ interface Project {
 }
 
 const Projects: React.FC = () => {
+    const { theme } = useTheme();
+
     // Sample projects data - replace with your actual projects
     const projects: Project[] = [
         {
@@ -61,7 +64,13 @@ const Projects: React.FC = () => {
     ];
 
     return (
-        <section id="projects" className="projects-section">
+        <section
+            id="projects"
+            className="projects-section"
+            style={{
+                backgroundColor: theme === 'dark' ? '#121212' : '#ffffff',
+            }}
+        >
             <div className="projects-inner">
                 <h2>My Projects</h2>
                 <div className="projects-container">

@@ -1,7 +1,7 @@
 /* Projects Section Styling */
 .projects-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: var(--color-bg);
 }
 
 .projects-inner {
@@ -13,7 +13,7 @@
     text-align: center;
     margin-bottom: 50px;
     font-size: 2.5rem;
-    color: #333;
+    color: var(--color-text);
 }
 
 .projects-container {
@@ -24,16 +24,24 @@
 }
 
 .project-card {
-    background-color: #fff;
+    background-color: var(--color-card-bg);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.dark .project-card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.dark .project-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .project-image {
@@ -59,11 +67,11 @@
 .project-content h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--color-text);
 }
 
 .project-content p {
-    color: #666;
+    color: var(--color-text-secondary);
     margin-bottom: 15px;
     line-height: 1.5;
 }
@@ -76,8 +84,8 @@
 }
 
 .tech-badge {
-    background-color: #f0f0f0;
-    color: #555;
+    background-color: var(--color-badge-bg);
+    color: var(--color-badge-text);
     padding: 5px 10px;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -93,14 +101,14 @@
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    color: #3498db;
+    color: var(--color-link);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
 .project-link:hover {
-    color: #2980b9;
+    color: var(--color-link-hover);
 }
 
 /* Responsive adjustments */

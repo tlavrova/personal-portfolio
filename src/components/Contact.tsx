@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import './styles/Contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useTheme } from '../context/ThemeContext';
 
 const Contact: React.FC = () => {
     const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const Contact: React.FC = () => {
     });
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState('');
+    const { theme } = useTheme();
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -90,7 +92,13 @@ const Contact: React.FC = () => {
     };
 
     return (
-        <section id="contact" className="contact-section">
+        <section
+            id="contact"
+            className="contact-section"
+            style={{
+                backgroundColor: theme === 'dark' ? '#121212' : '#ffffff',
+            }}
+        >
             <div className="contact-content">
                 <h2>Get In Touch</h2>
                 <div className="contact-container">
