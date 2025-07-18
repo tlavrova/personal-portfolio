@@ -5,19 +5,17 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App min-h-screen bg-gray-100">
       <Header />
-      <main className="container mx-auto px-4 py-8">
+      <main className="mx-auto">
         <Home />
         <About />
         <Projects />
         <Contact />
       </main>
-      <Footer />
     </div>
   );
 }
