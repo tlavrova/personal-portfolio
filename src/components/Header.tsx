@@ -20,6 +20,7 @@ const Header: React.FC = () => {
         <NavLink href="#home">Home</NavLink>
         <NavLink href="#about">About</NavLink>
         <NavLink href="#projects">Projects</NavLink>
+        <NavLink href="#testimonials">Testimonials</NavLink>
         <NavLink href="#contact">Contact</NavLink>
       </NavMenu>
     </HeaderContainer>
