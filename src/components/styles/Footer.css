@@ -2,6 +2,8 @@
   background-color: #2d3748; /* Restored darker background for better contrast */
   color: #e2e8f0; /* Light text color for better visibility */
   padding: 2rem 1rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .footer-content {
