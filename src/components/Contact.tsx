@@ -115,14 +115,6 @@ const Contact: React.FC = () => {
                         </div>
 
                         <div className="info-item">
-                            <FontAwesomeIcon icon={faPhone} className="info-icon" />
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+31 (6) 5877-6814</p>
-                            </div>
-                        </div>
-
-                        <div className="info-item">
                             <FontAwesomeIcon icon={faLocationDot} className="info-icon" />
                             <div>
                                 <h4>Location</h4>
