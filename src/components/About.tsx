@@ -13,7 +13,7 @@ const About: React.FC = () => {
             id="about"
             className="about-section"
             style={{
-                backgroundColor: theme === 'dark' ? '#121212' : '#ffffff',
+                backgroundColor: 'var(--color-bg)',
             }}
         >
             <div className="about-content">

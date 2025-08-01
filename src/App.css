@@ -27,19 +27,19 @@ section {
 }
 
 section#home {
-  background-color: #f8f9fa;
+  background-color: var(--color-card-bg);
 }
 
 section#about {
-  background-color: #ffffff;
+  background-color: var(--color-bg);
 }
 
 section#projects {
-  background-color: #f8f9fa;
+  background-color: var(--color-card-bg);
 }
 
 section#contact {
-  background-color: #ffffff; /* Changed from #f8f9fa to match the About section */
+  background-color: var(--color-bg);
 }
 
 /* Responsive adjustments */

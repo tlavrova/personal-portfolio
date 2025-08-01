@@ -68,7 +68,7 @@ const Projects: React.FC = () => {
             id="projects"
             className="projects-section"
             style={{
-                backgroundColor: theme === 'dark' ? '#121212' : '#ffffff',
+                backgroundColor: 'var(--color-bg)',
             }}
         >
             <div className="projects-inner">

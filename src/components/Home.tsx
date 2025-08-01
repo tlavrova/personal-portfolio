@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       id="home"
       className="home-section"
       style={{
-        backgroundColor: theme === 'dark' ? '#121212' : '#ffffff',
+        backgroundColor: 'var(--color-bg)',
       }}
     >
       <div className="home-content">

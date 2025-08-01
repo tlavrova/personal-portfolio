@@ -14,7 +14,7 @@
   .nav-menu {
     position: absolute;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: var(--color-header-bg);
     top: 4rem;
     left: 0;
     right: 0;
