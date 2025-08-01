@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './styles/Contact.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faLocationDot } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useTheme } from '../context/ThemeContext';
+import ContactInfo from './ContactInfo';
+import ContactForm, { FormData } from './ContactForm';
+import SuccessMessage from './SuccessMessage';
 
 const Contact: React.FC = () => {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<FormData>({
         name: '',
         email: '',
         subject: '',
@@ -47,8 +47,8 @@ const Contact: React.FC = () => {
         const enhancedFormData = {
             ...formData,
             _subject: `Portfolio Contact: ${formData.subject || 'New message'}`,
-            _replyto: formData.email, // Ensures proper reply-to header
-            _format: 'plain' // Plain text format can help with spam filtering
+            _replyto: formData.email,
+            _format: 'plain'
         };
 
         // Send form data to Formspree
@@ -66,9 +66,7 @@ const Contact: React.FC = () => {
             }
             return response.json();
         })
-        .then(data => {
-            console.log('Success:', data);
-
+        .then(() => {
             // Show success message
             setSubmitted(true);
 
@@ -102,99 +100,17 @@ const Contact: React.FC = () => {
             <div className="contact-content">
                 <h2>Get In Touch</h2>
                 <div className="contact-container">
-                    <div className="contact-info">
-                        <h3>Contact Information</h3>
-                        <p>Feel free to reach out to me for any inquiries or opportunities. I'm open to freelance work, full-time positions, and collaborations.</p>
-
-                        <div className="info-item">
-                            <FontAwesomeIcon icon={faEnvelope} className="info-icon" />
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:tlavrova230@gmail.com">tlavrova230@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <div className="info-item">
-                            <FontAwesomeIcon icon={faLocationDot} className="info-icon" />
-                            <div>
-                                <h4>Location</h4>
-                                <p>Amsterdam, Netherlands</p>
-                            </div>
-                        </div>
-
-                        <div className="social-links">
-                            <a href="https://linkedin.com/in/tlavrova230" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                <FontAwesomeIcon icon={faLinkedin} />
-                            </a>
-                            <a href="https://github.com/tlavrova" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
-                        </div>
-                    </div>
-
+                    <ContactInfo />
                     <div className="contact-form-container">
                         {submitted ? (
-                            <div className="success-message">
-                                <h3>Thank you for your message!</h3>
-                                <p>I'll get back to you as soon as possible.</p>
-                            </div>
+                            <SuccessMessage />
                         ) : (
-                            <form className="contact-form" onSubmit={handleSubmit}>
-                                <h3>Send Me a Message</h3>
-
-                                {error && <div className="error-message">{error}</div>}
-
-                                <div className="form-group">
-                                    <label htmlFor="name">Name *</label>
-                                    <input
-                                        type="text"
-                                        id="name"
-                                        name="name"
-                                        value={formData.name}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-
-                                <div className="form-group">
-                                    <label htmlFor="email">Email *</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-
-                                <div className="form-group">
-                                    <label htmlFor="subject">Subject</label>
-                                    <input
-                                        type="text"
-                                        id="subject"
-                                        name="subject"
-                                        value={formData.subject}
-                                        onChange={handleChange}
-                                    />
-                                </div>
-
-                                <div className="form-group">
-                                    <label htmlFor="message">Message *</label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        rows={5}
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-
-                                <button type="submit" className="submit-button">
-                                    Send Message
-                                </button>
-                            </form>
+                            <ContactForm
+                                formData={formData}
+                                error={error}
+                                handleChange={handleChange}
+                                handleSubmit={handleSubmit}
+                            />
                         )}
                     </div>
                 </div>
