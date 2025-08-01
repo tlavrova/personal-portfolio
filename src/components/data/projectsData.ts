@@ -18,7 +18,7 @@ export const projectsData: Project[] = [
         id: 1,
         title: "Portfolio Website",
         description: "A personal portfolio website built to showcase my projects and skills.",
-        technologies: ["React", "TypeScript", "CSS"],
+        technologies: ["React", "TypeScript", "CSS", "FontAwesome", "Formspree"],
         image: portfolioPreview,
         github: "https://github.com/tlavrova/personal-portfolio",
         liveDemo: "tlavrova.github.io/personal-portfolio/"
