@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
             id="contact"
             className="contact-section"
             style={{
-                backgroundColor: 'var(--color-bg)',
+                backgroundColor: 'var(--color-card-bg)',
             }}
         >
             <div className="contact-content">

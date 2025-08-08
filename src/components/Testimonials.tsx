@@ -12,7 +12,7 @@ const Testimonials: React.FC = () => {
       id="testimonials"
       className="testimonials-section"
       style={{
-        backgroundColor: 'var(--color-card-bg)',
+        backgroundColor: 'var(--color-bg)',
       }}
     >
       <div className="testimonials-container">

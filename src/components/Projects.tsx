@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
             id="projects"
             className="projects-section"
             style={{
-                backgroundColor: 'var(--color-bg)',
+                backgroundColor: 'var(--color-card-bg)',
             }}
         >
             <div className="projects-inner">
