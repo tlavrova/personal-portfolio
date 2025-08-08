@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
             }}
         >
             <div className="projects-inner">
-                <h2>My Projects</h2>
+                <h2 className="section-title">My Projects</h2>
                 <div className="projects-container">
                     {projectsData.map(project => (
                         <ProjectCard key={project.id} project={project} />

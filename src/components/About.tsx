@@ -17,7 +17,7 @@ const About: React.FC = () => {
             }}
         >
             <div className="about-content">
-                <h2>About Me</h2>
+                <h2 className="section-title">About Me</h2>
                 <p>
                     I'm Tatiana Lavrova, a dedicated Frontend Software Engineer with a passion for creating exceptional web applications. Over the years, I've honed my skills in modern frontend technologies and frameworks, enabling me to build reliable, scalable, and aesthetically pleasing user interfaces.
                 </p>

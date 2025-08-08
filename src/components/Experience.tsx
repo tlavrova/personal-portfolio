@@ -13,7 +13,7 @@ const Experience: React.FC = () => {
       }}
     >
       <div className="experience-inner">
-        <h2>Experience</h2>
+        <h2 className="section-title">Experience</h2>
         <div className="experience-container">
           {experiencesData.map(exp => (
             <ExperienceCard key={exp.id} experience={exp} />

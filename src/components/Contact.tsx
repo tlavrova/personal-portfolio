@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
             }}
         >
             <div className="contact-content">
-                <h2>Get In Touch</h2>
+                <h2 className="section-title">Get In Touch</h2>
                 <div className="contact-container">
                     <ContactInfo />
                     <div className="contact-form-container">

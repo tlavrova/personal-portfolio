@@ -16,7 +16,7 @@ const Testimonials: React.FC = () => {
       }}
     >
       <div className="testimonials-container">
-        <h2>What People Say</h2>
+        <h2 className="section-title">What People Say</h2>
         <div className="testimonials-grid">
           {testimonialsData.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
