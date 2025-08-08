@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     <HeaderContainer>
       <Logo>My Portfolio</Logo>
       <div className="header-right">
-        <HamburgerMenu onClick={toggleMenu} />
+        <HamburgerMenu onClick={toggleMenu} isOpen={isMenuOpen} />
       </div>
       <NavMenu isOpen={isMenuOpen}>
         <NavLink href="#home">Home</NavLink>
