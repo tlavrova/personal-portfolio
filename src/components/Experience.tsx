@@ -9,7 +9,7 @@ const Experience: React.FC = () => {
       id="experience"
       className="experience-section"
       style={{
-        backgroundColor: 'var(--color-card-bg)'
+        backgroundColor: 'var(--color-bg)'
       }}
     >
       <div className="experience-inner">
