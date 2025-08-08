@@ -4,11 +4,16 @@ import './NavLink.css';
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
+  onClick?: () => void;
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
+const NavLink: React.FC<NavLinkProps> = ({ href, children, onClick }) => {
   return (
-    <a className="nav-link" href={href}>
+    <a
+      className="nav-link"
+      href={href}
+      onClick={onClick}
+    >
       {children}
     </a>
   );

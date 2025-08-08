@@ -13,6 +13,10 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <HeaderContainer>
       <Logo>My Portfolio</Logo>
@@ -20,12 +24,12 @@ const Header: React.FC = () => {
         <HamburgerMenu onClick={toggleMenu} isOpen={isMenuOpen} />
       </div>
       <NavMenu isOpen={isMenuOpen}>
-        <NavLink href="#home">Home</NavLink>
-        <NavLink href="#about">About</NavLink>
-        <NavLink href="#experience">Experience</NavLink>
-        <NavLink href="#projects">Projects</NavLink>
-        <NavLink href="#testimonials">Testimonials</NavLink>
-        <NavLink href="#contact">Contact</NavLink>
+        <NavLink href="#home" onClick={closeMenu}>Home</NavLink>
+        <NavLink href="#about" onClick={closeMenu}>About</NavLink>
+        <NavLink href="#experience" onClick={closeMenu}>Experience</NavLink>
+        <NavLink href="#projects" onClick={closeMenu}>Projects</NavLink>
+        <NavLink href="#testimonials" onClick={closeMenu}>Testimonials</NavLink>
+        <NavLink href="#contact" onClick={closeMenu}>Contact</NavLink>
         <div className="nav-theme-toggle">
           <ThemeToggle />
         </div>
