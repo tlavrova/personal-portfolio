@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Experience from './components/Experience';
 import { ThemeProvider } from './context/ThemeContext';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <main>
           <Home />
           <About />
+          <Experience />
           <Projects />
           <Testimonials />
           <Contact />

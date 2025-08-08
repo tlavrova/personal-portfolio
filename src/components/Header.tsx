@@ -22,6 +22,7 @@ const Header: React.FC = () => {
       <NavMenu isOpen={isMenuOpen}>
         <NavLink href="#home">Home</NavLink>
         <NavLink href="#about">About</NavLink>
+        <NavLink href="#experience">Experience</NavLink>
         <NavLink href="#projects">Projects</NavLink>
         <NavLink href="#testimonials">Testimonials</NavLink>
         <NavLink href="#contact">Contact</NavLink>
