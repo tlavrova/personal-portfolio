@@ -20,6 +20,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
+  align-items: start; /* expanding one card must not stretch its row */
 }
 
 .testimonial-card {
@@ -70,6 +71,62 @@
   white-space: pre-line;
   color: var(--color-text);
   line-height: 1.6;
+  margin: 0;
+}
+
+.testimonial-content p.clamped {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  overflow: hidden;
+}
+
+.read-more-button,
+.view-more-button {
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-primary);
+}
+
+.read-more-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.read-more-button:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+.testimonials-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.view-more-button {
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-button:hover {
+  background-color: var(--color-primary-soft);
+}
+
+.testimonial-card:focus {
+  outline: none;
+}
+
+.testimonial-card:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 .testimonial-author h3 {

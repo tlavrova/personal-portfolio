@@ -22,7 +22,7 @@ Working list of improvements for the portfolio. Tick items off as they land.
 
 ## 🔜 Pass 2 — testimonials & content
 
-### Testimonials: collapsible cards ("Read more")
+### ✅ Testimonials: collapsible cards ("Read more") — done
 Long feedback stretches the whole grid row.
 - Clamp the quote to ~5 lines with CSS `line-clamp` (`-webkit-line-clamp` + `overflow: hidden`).
 - Show a "Read more" / "Show less" button only when the text actually overflows
@@ -30,7 +30,7 @@ Long feedback stretches the whole grid row.
 - Button gets `aria-expanded`; expanding one card shouldn't stretch its neighbours → `align-items: start` on the grid.
 - Alternative if cards still feel uneven: masonry-style columns (`columns: 3`) instead of grid.
 
-### Testimonials: "View more" for the section
+### ✅ Testimonials: "View more" for the section — done (shows 6, reveals 6 more per click; `PAGE_SIZE` in `Testimonials.tsx`)
 The list will keep growing.
 - Show the first 6 (or 3 on mobile), then a "View more testimonials (N)" button that reveals the rest (or the next batch).
 - Order `testimonialsData` so the strongest ones come first; optionally add a `featured: true` flag.
@@ -42,6 +42,12 @@ The list will keep growing.
   if they're OK being quoted publicly.
 - Optional: an `excerpt` field shown collapsed, full `content` on "Read more".
 
+### Add more testimonials (your task)
+- [ ] Collect new feedback (current/former colleagues, managers, clients; LinkedIn recommendations are a good source)
+- [ ] Add each as a new entry in `src/components/data/testimonialsData.ts` (`id`, `name`, `role`, `company`, `content`, optional `image`)
+- [ ] Keep the strongest ones in the first 6 — only those are visible before "View more"
+- Aim for variety: different roles and companies, not only Dialog
+
 ### New profile photo
 - Drop the new photo into `src/assets/images/` (replace `portfolio-photo.jpg`, or update the import in `Home.tsx`).
 - Resize before committing (~800–1000 px, JPEG/WebP ≤ 200 KB): `sips -Z 1000 -s format jpeg -s formatOptions 80 in.jpg --out portfolio-photo.jpg`
@@ -50,14 +56,14 @@ The list will keep growing.
 
 ## 🎨 Pass 3 — visual polish
 
-- [ ] Only the hero needs `min-height: 100vh`; drop it for other sections (big empty gaps on tall screens)
+- [x] Only the hero needs `min-height: 100vh`; drop it for other sections (big empty gaps on tall screens)
 - [ ] Experience as a vertical timeline; collapse 2009–2015 roles under "Show earlier roles"
 - [ ] Explicit `technologies` field on experiences instead of regex-guessing from bullet text (`ExperienceCard.tsx`)
 - [ ] Shorten the hero intro to ~2 lines
 - [ ] Active nav link highlight while scrolling (`IntersectionObserver`)
-- [ ] Footer heading underlines are left-aligned while text is centred — align them
+- [x] Footer heading underlines are left-aligned while text is centred — align them
 - [ ] Mobile menu `top: 60px` is hard-coded; use `var(--header-height)`
-- [ ] Left-align body text and lists — `.App { text-align: center }` centres everything, which makes experience bullets and long testimonials hard to read; keep centring only for section titles/hero on mobile
+- [x] Left-align body text and lists — `.App { text-align: center }` centres everything, which makes experience bullets and long testimonials hard to read; keep centring only for section titles/hero on mobile
 - [ ] Replace the Todo List screenshot — it's mostly white space and makes the card look broken next to the others
 - [ ] Use one heading font throughout (Poppins on section titles only today; card/contact headings use the system font)
 - [ ] Consistent spacing scale for section padding (currently mixes 0, 60px, 80px, 4rem) — e.g. `--space-section` token
