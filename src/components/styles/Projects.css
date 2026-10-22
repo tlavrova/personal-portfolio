@@ -1,19 +1,12 @@
 /* Projects Section Styling */
 .projects-section {
-    padding: 80px 20px;
-    background: var(--color-card-bg);
+    padding: var(--space-section-y) var(--space-section-x);
+    background: var(--color-section-alt);
 }
 
 .projects-inner {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.projects-section h2 {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2.5rem;
-    color: var(--color-text);
 }
 
 .projects-container {
@@ -25,6 +18,9 @@
 
 .project-card {
     background-color: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -62,6 +58,9 @@
 
 .project-content {
     padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-content h3 {
@@ -94,33 +93,42 @@
 
 .project-links {
     display: flex;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: auto; /* keep actions aligned at the bottom of each card */
+    padding-top: 5px;
 }
 
 .project-link {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
-    color: var(--color-primary);
+    gap: 6px;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
-.project-link:hover {
-    color: var(--color-primary-hover);
+.project-link.primary {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .projects-section {
-        padding: 60px 15px;
-    }
+.project-link.primary:hover {
+    background-color: var(--color-primary-hover);
+    border-color: var(--color-primary-hover);
+}
 
-    .projects-section h2 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
+.project-link.secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+.project-link.secondary:hover {
+    background-color: var(--color-primary-soft);
 }
 
 @media (max-width: 480px) {

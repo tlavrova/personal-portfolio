@@ -1,19 +1,11 @@
 .testimonials-section {
-  padding: 4rem 1rem;
+  padding: var(--space-section-y) var(--space-section-x);
   background-color: var(--color-bg);
 }
 
 .testimonials-container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.testimonials-section h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--color-text);
 }
 
 .testimonials-grid {
@@ -25,6 +17,7 @@
 
 .testimonial-card {
   background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

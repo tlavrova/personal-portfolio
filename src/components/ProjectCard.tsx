@@ -24,14 +24,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           ))}
         </div>
         <div className="project-links">
-          {project.github && (
-            <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
-              <FontAwesomeIcon icon={faGithub} /> Source
+          {project.liveDemo && (
+            <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="project-link primary">
+              <FontAwesomeIcon icon={faExternalLinkAlt} /> Live Demo
             </a>
           )}
-          {project.liveDemo && (
-            <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="project-link">
-              <FontAwesomeIcon icon={faExternalLinkAlt} /> Live Demo
+          {project.github && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link secondary">
+              <FontAwesomeIcon icon={faGithub} /> Source
             </a>
           )}
         </div>

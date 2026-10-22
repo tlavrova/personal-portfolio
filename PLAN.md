@@ -62,14 +62,14 @@ The list will keep growing.
 - [ ] Shorten the hero intro to ~2 lines
 - [ ] Active nav link highlight while scrolling (`IntersectionObserver`)
 - [x] Footer heading underlines are left-aligned while text is centred — align them
-- [ ] Mobile menu `top: 60px` is hard-coded; use `var(--header-height)`
+- [x] Mobile menu `top: 60px` is hard-coded; use `var(--header-height)`
 - [x] Left-align body text and lists — `.App { text-align: center }` centres everything, which makes experience bullets and long testimonials hard to read; keep centring only for section titles/hero on mobile
 - [ ] Replace the Todo List screenshot — it's mostly white space and makes the card look broken next to the others
-- [ ] Use one heading font throughout (Poppins on section titles only today; card/contact headings use the system font)
-- [ ] Consistent spacing scale for section padding (currently mixes 0, 60px, 80px, 4rem) — e.g. `--space-section` token
-- [ ] Project cards: give "Live Demo" a clear primary-button style, keep "Source" secondary; consider making the image clickable
-- [ ] Contact section: left column is mostly empty at desktop width — rebalance (e.g. narrower info column, or stack info above the form)
-- [ ] Dark mode: cards barely stand out (`#1e1e1e` on `#121212`) — lighten `--color-card-bg` slightly or add a subtle border
+- [x] Use one heading font throughout (Poppins on section titles only today; card/contact headings use the system font)
+- [x] Consistent spacing scale for section padding (currently mixes 0, 60px, 80px, 4rem) — e.g. `--space-section` token
+- [x] Project cards: give "Live Demo" a clear primary-button style, keep "Source" secondary; consider making the image clickable
+- [x] Contact section: left column is mostly empty at desktop width — rebalance (e.g. narrower info column, or stack info above the form)
+- [x] Dark mode: cards barely stand out (`#1e1e1e` on `#121212`) — lighten `--color-card-bg` slightly or add a subtle border
 
 ## 🛠 Pass 4 — tooling
 
