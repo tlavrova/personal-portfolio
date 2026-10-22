@@ -45,7 +45,7 @@ export const experiencesData: Experience[] = [
         period: "Aug 2014 — Aug 2015",
         technologies: ["1C", "SQL", "XML", "CSV"],
         responsibilities: [
-        "Development of new functional units and maintenance of existing",
+        "Development of new functional units and maintenance of existing ones",
         "User counseling and support",
         "Improving and configuring 1C (ERP system) for trade management, accounting, salary and staff management",
         "Developing in 1C programming language",
@@ -61,7 +61,7 @@ export const experiencesData: Experience[] = [
         period: "Aug 2011 — Aug 2014",
         technologies: ["1C"],
         responsibilities: [
-            "Maintenance of the 1C (ERP system) configuration \"Salary and personnel management",
+            "Maintenance of the 1C (ERP system) configuration \"Salary and personnel management\"",
             "Updating configurations",
             "Modifying configurations",
             "Consulting of employees",
@@ -78,7 +78,7 @@ export const experiencesData: Experience[] = [
         responsibilities: [
             "Business process support",
             "Development of new functionality",
-            "Development new reports and optimizing old ones"
+            "Development of new reports and optimization of existing ones"
         ],
     },
     {

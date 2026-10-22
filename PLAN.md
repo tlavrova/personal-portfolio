@@ -49,12 +49,12 @@ The list will keep growing.
 - Aim for variety: different roles and companies, not only Dialog
 
 ### Content review — check every section for outdated info (your task)
+Drafts for the hero intro and trimmed testimonials, plus open questions: [CONTENT-DRAFTS.md](CONTENT-DRAFTS.md).
 Go through the live site section by section and update anything that's no longer accurate.
 - [ ] **Hero** — title, intro text (also planned: shorten to ~2 lines)
 - [ ] **About** — bio paragraphs, skill icons (anything missing or no longer used?)
 - [ ] **Experience** — current job title/level (a testimonial mentions a move to medior), dates, responsibilities,
-      `technologies` per role. Typos to fix: missing closing quote in *"Salary and personnel management*,
-      "Development new reports" → "Developing new reports"
+      `technologies` per role (typos fixed 2026-10-22)
 - [ ] **Projects** — descriptions, tech lists, links still working; add newer projects
 - [ ] **Testimonials** — see "Testimonial content" and "Add more testimonials" above
 - [ ] **Contact** — email, location, availability text ("open to freelance work, full-time positions…")
@@ -62,8 +62,7 @@ Go through the live site section by section and update anything that's no longer
 - Data lives in `src/components/data/*.ts`; hero/about/contact text is in the component files
 
 ### New profile photo
-- Drop the new photo into `src/assets/images/` (replace `portfolio-photo.jpg`, or update the import in `Home.tsx`).
-- Resize before committing (~800–1000 px, JPEG/WebP ≤ 200 KB): `sips -Z 1000 -s format jpeg -s formatOptions 80 in.jpg --out portfolio-photo.jpg`
+- Run `npm run photo -- path/to/new-photo.jpg` — resizes, compresses and saves it as `src/assets/images/portfolio-photo.jpg`
 - Square-ish crop with face centred works best in the circle; adjust `object-position` in `Home.css` if needed.
 - Also update `portfolio-preview.jpg` (project card + README) once the new look is final.
 
@@ -77,7 +76,7 @@ Go through the live site section by section and update anything that's no longer
 - [x] Footer heading underlines are left-aligned while text is centred — align them
 - [x] Mobile menu `top: 60px` is hard-coded; use `var(--header-height)`
 - [x] Left-align body text and lists — `.App { text-align: center }` centres everything, which makes experience bullets and long testimonials hard to read; keep centring only for section titles/hero on mobile
-- [ ] Replace the Todo List screenshot — it's mostly white space and makes the card look broken next to the others
+- [x] Replace the Todo List screenshot — it's mostly white space and makes the card look broken next to the others
 - [x] Use one heading font throughout (Poppins on section titles only today; card/contact headings use the system font)
 - [x] Consistent spacing scale for section padding (currently mixes 0, 60px, 80px, 4rem) — e.g. `--space-section` token
 - [x] Project cards: give "Live Demo" a clear primary-button style, keep "Source" secondary; consider making the image clickable

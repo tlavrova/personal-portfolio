@@ -20,6 +20,7 @@
     "typecheck": "tsc",
     "test": "vitest run",
     "test:watch": "vitest",
+    "photo": "sh scripts/optimize-photo.sh",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
