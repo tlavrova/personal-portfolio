@@ -1,5 +1,5 @@
 import React from 'react';
-import './NavLink.css';
+import './styles/NavLink.css';
 
 interface NavLinkProps {
   href: string;

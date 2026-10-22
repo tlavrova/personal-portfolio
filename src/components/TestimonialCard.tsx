@@ -1,4 +1,4 @@
-import React, { forwardRef, useLayoutEffect, useRef, useState } from 'react';
+import { forwardRef, useLayoutEffect, useRef, useState } from 'react';
 import { Testimonial } from './data/testimonialsData';
 import './styles/Testimonials.css';
 

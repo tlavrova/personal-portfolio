@@ -86,9 +86,10 @@ Go through the live site section by section and update anything that's no longer
 
 ## 🛠 Pass 4 — tooling
 
-- [ ] Migrate Create React App (deprecated) → Vite; bump TypeScript to 5.x
+- [x] Migrate Create React App (deprecated) → Vite 8; bump TypeScript to 5.9
 - [ ] Add a few tests (Contact form validation, theme toggle, testimonials "Read more")
-- [ ] Move `HeaderContainer`, `Logo`, `NavLink`, `NavMenu`, `HamburgerMenu` from `components/styles/` to `components/`
-- [ ] GitHub Action: build + deploy to Pages on push (instead of local `npm run deploy`)
-- [ ] Stop committing `.idea/`
-- [ ] `npx update-browserslist-db@latest`
+- [x] Move `HeaderContainer`, `Logo`, `NavLink`, `NavMenu`, `HamburgerMenu` from `components/styles/` to `components/`
+- [ ] GitHub Action: build + deploy to Pages on push (instead of local `npm run deploy`) — also removes `gh-pages`, the source of the remaining `npm audit` warnings
+- [ ] Add ESLint (CRA bundled it; Vite doesn't) — `typescript-eslint` + `eslint-plugin-react-hooks`
+- [x] Stop committing `.idea/`
+- [x] `npx update-browserslist-db@latest`

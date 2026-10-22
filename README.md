@@ -21,6 +21,7 @@ Visit the live site: [tlavrova.github.io/personal-portfolio](https://tlavrova.gi
 
 - **React** - UI library
 - **TypeScript** - Type safety and better developer experience
+- **Vite** - Dev server and build tool
 - **CSS** - Custom styling with responsive design
 - **FontAwesome** - Icons
 - **Formspree** - Form handling
@@ -43,8 +44,8 @@ src/
 
 ### Prerequisites
 
-- Node.js (v14.0.0 or later)
-- npm or yarn
+- Node.js 20.19+ or 22.12+
+- npm
 
 ### Installation
 
@@ -64,13 +65,14 @@ src/
    npm start
    ```
 
-4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Open [http://localhost:3000/personal-portfolio/](http://localhost:3000/personal-portfolio/) to view it in the browser (it opens automatically).
 
 ## 🔧 Available Scripts
 
-- **`npm start`**: Runs the app in development mode
-- **`npm test`**: Launches the test runner
-- **`npm run build`**: Builds the app for production
+- **`npm start`** / **`npm run dev`**: Runs the Vite dev server
+- **`npm run build`**: Type-checks and builds the app for production into `build/`
+- **`npm run preview`**: Serves the production build locally
+- **`npm run typecheck`**: Runs the TypeScript compiler without emitting
 - **`npm run deploy`**: Deploys the app to GitHub Pages
 
 ## 📱 Responsive Design

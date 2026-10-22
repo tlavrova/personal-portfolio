@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import HeaderContainer from './styles/HeaderContainer';
-import Logo from './styles/Logo';
-import NavMenu from './styles/NavMenu';
-import NavLink from './styles/NavLink';
-import HamburgerMenu from './styles/HamburgerMenu';
+import HeaderContainer from './HeaderContainer';
+import Logo from './Logo';
+import NavMenu from './NavMenu';
+import NavLink from './NavLink';
+import HamburgerMenu from './HamburgerMenu';
 import ThemeToggle from './ThemeToggle';
 
 const NAV_ITEMS = [

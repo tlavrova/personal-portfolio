@@ -1,5 +1,5 @@
 import React from 'react';
-import './HeaderContainer.css';
+import './styles/HeaderContainer.css';
 
 interface HeaderContainerProps {
   children: React.ReactNode;

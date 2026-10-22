@@ -1,5 +1,5 @@
 import React from 'react';
-import './Logo.css';
+import './styles/Logo.css';
 
 interface LogoProps {
   children: React.ReactNode;

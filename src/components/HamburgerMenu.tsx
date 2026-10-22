@@ -1,5 +1,5 @@
 import React from 'react';
-import './HamburgerMenu.css';
+import './styles/HamburgerMenu.css';
 
 interface HamburgerMenuProps {
   onClick: () => void;

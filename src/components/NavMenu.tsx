@@ -1,5 +1,5 @@
 import React from 'react';
-import './NavMenu.css';
+import './styles/NavMenu.css';
 
 interface NavMenuProps {
   children: React.ReactNode;
