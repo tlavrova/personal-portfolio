@@ -9,15 +9,7 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
-  const { jobTitle, company, website, period, responsibilities } = experience;
-
-  // Extract tech stack from responsibilities (if mentioned)
-  const techStack = responsibilities
-    .join(' ')
-    .match(/(?:Angular|React|TypeScript|JavaScript|HTML|CSS|C#|ASP\.NET|SQL|Git|1C|XML|CSV)/g) || [];
-
-  // Remove duplicates using Array.from instead of spread operator
-  const uniqueTechStack = Array.from(new Set(techStack));
+  const { jobTitle, company, website, period, technologies, responsibilities } = experience;
 
   return (
     <div className="experience-card">
@@ -35,10 +27,10 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
         )}
       </div>
 
-      {uniqueTechStack.length > 0 && (
+      {technologies.length > 0 && (
         <div className="tech-badges">
-          {uniqueTechStack.map((tech, idx) => (
-            <span key={idx} className="experience-tech-badge">{tech}</span>
+          {technologies.map(tech => (
+            <span key={tech} className="experience-tech-badge">{tech}</span>
           ))}
         </div>
       )}

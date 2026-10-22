@@ -4,6 +4,7 @@ export interface Experience {
   company: string;
   website?: string;
   period: string;
+  technologies: string[];
   responsibilities: string[];
 }
 
@@ -14,6 +15,7 @@ export const experiencesData: Experience[] = [
     company: "Dialog",
     website: "https://www.dialog.nl/",
     period: "Sep 2022 — Present",
+    technologies: ["Angular", "TypeScript", "C#", "ASP.NET", "SQL"],
     responsibilities: [
       "Developed and maintained Angular-based frontend features using TypeScript",
       "Created unit tests for frontend logic and components",
@@ -27,6 +29,7 @@ export const experiencesData: Experience[] = [
     company: "BUX",
     website: "https://bux.com/",
     period: "Jan 2021 — Sep 2022",
+    technologies: ["Angular", "React", "Git"],
     responsibilities: [
       "Contributed to multiple frontend projects using Angular and React",
       "Improved UI responsiveness and accessibility across core components",
@@ -40,6 +43,7 @@ export const experiencesData: Experience[] = [
         company: "Forex Club",
         website: "https://www.fxclub.org/",
         period: "Aug 2014 — Aug 2015",
+        technologies: ["1C", "SQL", "XML", "CSV"],
         responsibilities: [
         "Development of new functional units and maintenance of existing",
         "User counseling and support",
@@ -55,6 +59,7 @@ export const experiencesData: Experience[] = [
         company: "Coffee House",
         website: "https://www.coffeehouse.ru/",
         period: "Aug 2011 — Aug 2014",
+        technologies: ["1C"],
         responsibilities: [
             "Maintenance of the 1C (ERP system) configuration \"Salary and personnel management",
             "Updating configurations",
@@ -69,6 +74,7 @@ export const experiencesData: Experience[] = [
         company: "Development and construction company Likos",
         website: "https://likos.ru/",
         period: "Aug 2010 — Aug 2011",
+        technologies: [],
         responsibilities: [
             "Business process support",
             "Development of new functionality",
@@ -81,6 +87,7 @@ export const experiencesData: Experience[] = [
         company: "LLC Rebis",
         website: "https://www.rebis-online.ru/",
         period: "Aug 2009 — Aug 2010",
+        technologies: ["1C"],
         responsibilities: [
             "Business process automation (accounting, human resources)",
             "Work with customers to implement and maintain software 1C (ERP system)",

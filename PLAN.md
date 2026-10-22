@@ -48,6 +48,19 @@ The list will keep growing.
 - [ ] Keep the strongest ones in the first 6 — only those are visible before "View more"
 - Aim for variety: different roles and companies, not only Dialog
 
+### Content review — check every section for outdated info (your task)
+Go through the live site section by section and update anything that's no longer accurate.
+- [ ] **Hero** — title, intro text (also planned: shorten to ~2 lines)
+- [ ] **About** — bio paragraphs, skill icons (anything missing or no longer used?)
+- [ ] **Experience** — current job title/level (a testimonial mentions a move to medior), dates, responsibilities,
+      `technologies` per role. Typos to fix: missing closing quote in *"Salary and personnel management*,
+      "Development new reports" → "Developing new reports"
+- [ ] **Projects** — descriptions, tech lists, links still working; add newer projects
+- [ ] **Testimonials** — see "Testimonial content" and "Add more testimonials" above
+- [ ] **Contact** — email, location, availability text ("open to freelance work, full-time positions…")
+- [ ] **Footer & meta** — links, page description / Open Graph text in `public/index.html`
+- Data lives in `src/components/data/*.ts`; hero/about/contact text is in the component files
+
 ### New profile photo
 - Drop the new photo into `src/assets/images/` (replace `portfolio-photo.jpg`, or update the import in `Home.tsx`).
 - Resize before committing (~800–1000 px, JPEG/WebP ≤ 200 KB): `sips -Z 1000 -s format jpeg -s formatOptions 80 in.jpg --out portfolio-photo.jpg`
@@ -57,10 +70,10 @@ The list will keep growing.
 ## 🎨 Pass 3 — visual polish
 
 - [x] Only the hero needs `min-height: 100vh`; drop it for other sections (big empty gaps on tall screens)
-- [ ] Experience as a vertical timeline; collapse 2009–2015 roles under "Show earlier roles"
-- [ ] Explicit `technologies` field on experiences instead of regex-guessing from bullet text (`ExperienceCard.tsx`)
+- [x] Experience as a vertical timeline; collapse 2009–2015 roles under "Show earlier roles"
+- [x] Explicit `technologies` field on experiences instead of regex-guessing from bullet text (`ExperienceCard.tsx`)
 - [ ] Shorten the hero intro to ~2 lines
-- [ ] Active nav link highlight while scrolling (`IntersectionObserver`)
+- [x] Active nav link highlight while scrolling (`IntersectionObserver`)
 - [x] Footer heading underlines are left-aligned while text is centred — align them
 - [x] Mobile menu `top: 60px` is hard-coded; use `var(--header-height)`
 - [x] Left-align body text and lists — `.App { text-align: center }` centres everything, which makes experience bullets and long testimonials hard to read; keep centring only for section titles/hero on mobile
