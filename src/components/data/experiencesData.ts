@@ -11,16 +11,17 @@ export interface Experience {
 export const experiencesData: Experience[] = [
   {
     id: 1,
-    jobTitle: "Frontend Software Engineer",
-    company: "Dialog",
+    jobTitle: "Frontend Developer",
+    company: "Visma Dialog",
     website: "https://www.dialog.nl/",
     period: "Sep 2022 — Present",
-    technologies: ["Angular", "TypeScript", "C#", "ASP.NET", "SQL"],
+    technologies: ["Angular", "TypeScript", "Storybook", "Claude Code", "C#", "ASP.NET", "SQL"],
     responsibilities: [
-      "Developed and maintained Angular-based frontend features using TypeScript",
-      "Created unit tests for frontend logic and components",
-      "Participated in backend development using C#, ASP.NET, and SQL",
-      "Collaborated with cross-functional teams to deliver new functionalities and bug fixes",
+      "Worked on AI-powered features for an HR SaaS platform: an AI coaching assistant, AI analysis of engagement surveys and AI-driven talent mapping",
+      "Built the product's design system with Storybook",
+      "Built custom Claude Code skills for automated code review, and used Claude Code in daily development",
+      "Developed frontend features with Angular (up to the latest v22) and TypeScript, covered by unit tests",
+      "Contributed to backend development with C#, ASP.NET and SQL",
     ],
   },
   {

@@ -7,7 +7,7 @@ import './styles/Contact.css';
 const ContactInfo: React.FC = () => (
     <div className="contact-info">
         <h3>Contact Information</h3>
-        <p>Feel free to reach out to me for any inquiries or opportunities. I'm open to freelance work, full-time positions, and collaborations.</p>
+        <p>Feel free to reach out about opportunities or just to connect. I'm open to Frontend and AI-focused Quality Engineering roles in the Netherlands.</p>
 
         <div className="info-item">
             <FontAwesomeIcon icon={faEnvelope} className="info-icon" />

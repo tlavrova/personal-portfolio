@@ -9,13 +9,15 @@ const Home: React.FC = () => {
       className="home-section"
     >
       <div className="home-content">
+        <p className="open-to-work">
+          <span className="open-to-work-dot" aria-hidden="true"></span>
+          Open to Frontend &amp; AI Quality Engineering roles · Netherlands
+        </p>
         <h1>Hello, I'm <span className="highlight">Tatiana Lavrova</span></h1>
-        <h2>Frontend Software Engineer</h2>
+        <h2>Frontend Developer</h2>
         <p className="intro-text">
-         I craft visually stunning and highly responsive web experiences. With a strong foundation in HTML, CSS, TypeScript, Angular,
-          and React, I transform creative ideas into functional, user-friendly websites. My expertise lies in building interfaces that not
-          only meet client expectations but also provide users with an intuitive and enjoyable journey. Explore my projects to see how I
-          blend technology and design to bring web applications to life.
+          5+ years of experience with Angular, React and TypeScript. I've built AI-powered features, a design
+          system with Storybook, and AI-driven code review tooling, always with a strong focus on quality.
         </p>
         <div className="cta-buttons">
           <a href="#projects" className="btn primary-btn">View My Work</a>

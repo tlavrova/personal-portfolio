@@ -51,14 +51,15 @@ The list will keep growing.
 ### Content review — check every section for outdated info (your task)
 Drafts for the hero intro and trimmed testimonials, plus open questions: [CONTENT-DRAFTS.md](CONTENT-DRAFTS.md).
 Go through the live site section by section and update anything that's no longer accurate.
-- [ ] **Hero** — title, intro text (also planned: shorten to ~2 lines)
-- [ ] **About** — bio paragraphs, skill icons (anything missing or no longer used?)
-- [ ] **Experience** — current job title/level (a testimonial mentions a move to medior), dates, responsibilities,
-      `technologies` per role (typos fixed 2026-10-22)
+- [x] **Hero** — title and intro updated from LinkedIn summary
+- [x] **About** — bio rewritten from LinkedIn summary (skill icons: consider adding Storybook)
+- [x] **Experience** — Visma Dialog role updated from LinkedIn (title, AI features, design system, Storybook); typos fixed.
+      Still open: Likos tech tags; consider refreshing older bullets
+- [ ] **Visma Dialog end date** — on your last day, change "Sep 2022 — Present" in `experiencesData.ts` to the real end date
 - [ ] **Projects** — descriptions, tech lists, links still working; add newer projects
 - [ ] **Testimonials** — see "Testimonial content" and "Add more testimonials" above
-- [ ] **Contact** — email, location, availability text ("open to freelance work, full-time positions…")
-- [ ] **Footer & meta** — links, page description / Open Graph text in `public/index.html`
+- [x] **Contact** — availability text updated ("open to frontend roles in the Netherlands")
+- [x] **Footer & meta** — title, description and Open Graph text in `index.html` updated
 - Data lives in `src/components/data/*.ts`; hero/about/contact text is in the component files
 
 ### New profile photo
@@ -71,7 +72,7 @@ Go through the live site section by section and update anything that's no longer
 - [x] Only the hero needs `min-height: 100vh`; drop it for other sections (big empty gaps on tall screens)
 - [x] Experience as a vertical timeline; collapse 2009–2015 roles under "Show earlier roles"
 - [x] Explicit `technologies` field on experiences instead of regex-guessing from bullet text (`ExperienceCard.tsx`)
-- [ ] Shorten the hero intro to ~2 lines
+- [x] Shorten the hero intro to ~2 lines
 - [x] Active nav link highlight while scrolling (`IntersectionObserver`)
 - [x] Footer heading underlines are left-aligned while text is centred — align them
 - [x] Mobile menu `top: 60px` is hard-coded; use `var(--header-height)`

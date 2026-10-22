@@ -13,10 +13,13 @@ const About: React.FC = () => {
             <div className="about-content">
                 <h2 className="section-title">About Me</h2>
                 <p>
-                    I'm Tatiana Lavrova, a dedicated Frontend Software Engineer with a passion for creating exceptional web applications. Over the years, I've honed my skills in modern frontend technologies and frameworks, enabling me to build reliable, scalable, and aesthetically pleasing user interfaces.
+                    I'm Tatiana Lavrova, a Frontend Developer in Amsterdam with 5+ years of experience in Angular, React and TypeScript, and 12 years in software development overall.
                 </p>
                 <p>
-                    I thrive on collaboration, constantly seeking new challenges and learning opportunities to further enhance my expertise. My projects reflect a blend of creativity and technical proficiency, aimed at delivering optimal user experiences.
+                    At Visma Dialog, an HR SaaS platform, I've worked on AI-powered features: an AI coaching assistant, AI analysis of engagement surveys and AI-driven talent mapping. I also built the design system with Storybook and use Claude Code in my daily work, including custom skills for automated code review.
+                </p>
+                <p>
+                    Before that, I worked in fintech at BUX and Forex Club, and started my career in ERP development. I'm now open to Frontend and AI-focused Quality Engineering roles in the Netherlands.
                 </p>
                 <div className="skills-icons">
                     <FontAwesomeIcon icon={faHtml5} size="2x" title="HTML5" />
