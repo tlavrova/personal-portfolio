@@ -1,18 +1,12 @@
 import React from 'react';
 import './styles/Home.css';
 import portfolioPhoto from '../assets/images/portfolio-photo.jpg';
-import { useTheme } from '../context/ThemeContext';
 
 const Home: React.FC = () => {
-  const { theme } = useTheme();
-
   return (
     <section
       id="home"
       className="home-section"
-      style={{
-        backgroundColor: 'var(--color-bg)',
-      }}
     >
       <div className="home-content">
         <h1>Hello, I'm <span className="highlight">Tatiana Lavrova</span></h1>

@@ -8,9 +8,6 @@ const Projects: React.FC = () => {
         <section
             id="projects"
             className="projects-section"
-            style={{
-                backgroundColor: 'var(--color-card-bg)',
-            }}
         >
             <div className="projects-inner">
                 <h2 className="section-title">My Projects</h2>

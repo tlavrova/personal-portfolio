@@ -3,18 +3,12 @@ import './styles/About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJsSquare, faReact, faAngular, faGitAlt } from '@fortawesome/free-brands-svg-icons';
 import tsLogo from '../assets/images/typescript-logo.svg';
-import { useTheme } from '../context/ThemeContext';
 
 const About: React.FC = () => {
-    const { theme } = useTheme();
-
     return (
         <section
             id="about"
             className="about-section"
-            style={{
-                backgroundColor: 'var(--color-card-bg)',
-            }}
         >
             <div className="about-content">
                 <h2 className="section-title">About Me</h2>

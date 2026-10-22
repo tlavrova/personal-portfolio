@@ -9,6 +9,9 @@
   position: relative;
   width: 30px;
   height: 44px; /* Further increased height for more space between lines */
+  background: none;
+  border: none;
+  margin: 0;
 }
 
 .hamburger-menu span {

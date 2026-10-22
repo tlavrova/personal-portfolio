@@ -33,7 +33,7 @@ export const testimonialsData: Testimonial[] = [
         "\n" +
         "I also really appreciate your input on the AI project. I love how quickly things come together. One area I think you could make an even bigger impact is taking a bit more ownership during the sessions to shape the final product. I believe that could really help push the quality even further.\n" +
         "\n" +
-        "I've also seen you pairing up with Vitor, and that collaboration seems to be working really well, definitely keep that going! Let's keep up the great work!\"",
+        "I've also seen you pairing up with Vitor, and that collaboration seems to be working really well, definitely keep that going! Let's keep up the great work!",
   },
   {
     id: 4,

@@ -8,9 +8,6 @@ const Experience: React.FC = () => {
     <section
       id="experience"
       className="experience-section"
-      style={{
-        backgroundColor: 'var(--color-bg)'
-      }}
     >
       <div className="experience-inner">
         <h2 className="section-title">Experience</h2>

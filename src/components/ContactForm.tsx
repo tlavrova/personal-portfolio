@@ -11,15 +11,16 @@ interface FormData {
 interface ContactFormProps {
     formData: FormData;
     error: string;
+    isSubmitting: boolean;
     handleChange: (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
     handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
 }
 
-const ContactForm: React.FC<ContactFormProps> = ({ formData, error, handleChange, handleSubmit }) => (
+const ContactForm: React.FC<ContactFormProps> = ({ formData, error, isSubmitting, handleChange, handleSubmit }) => (
     <form className="contact-form" onSubmit={handleSubmit}>
         <h3>Send Me a Message</h3>
 
-        {error && <div className="error-message">{error}</div>}
+        {error && <div className="error-message" role="alert">{error}</div>}
 
         <div className="form-group">
             <label htmlFor="name">Name *</label>
@@ -68,8 +69,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ formData, error, handleChange
             />
         </div>
 
-        <button type="submit" className="submit-button">
-            Send Message
+        <button type="submit" className="submit-button" disabled={isSubmitting}>
+            {isSubmitting ? 'Sending…' : 'Send Message'}
         </button>
     </form>
 );

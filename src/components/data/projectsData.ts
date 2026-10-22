@@ -1,5 +1,5 @@
 import portfolioPreview from '../../assets/images/portfolio-preview.jpg';
-import recipeFinder from '../../assets/images/recipe-finder.png';
+import recipeFinder from '../../assets/images/recipe-finder.jpg';
 import weatherApp from '../../assets/images/weather-app.png';
 import todoList from '../../assets/images/todo-list.png';
 
@@ -21,7 +21,7 @@ export const projectsData: Project[] = [
         technologies: ["React", "TypeScript", "CSS", "FontAwesome", "Formspree"],
         image: portfolioPreview,
         github: "https://github.com/tlavrova/personal-portfolio",
-        liveDemo: "tlavrova.github.io/personal-portfolio/"
+        liveDemo: "https://tlavrova.github.io/personal-portfolio/"
     },
     {
         id: 2,

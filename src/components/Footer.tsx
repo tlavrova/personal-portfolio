@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="footer-content">
         <div className="footer-section">
           <h4>Contact</h4>
-          <p>Email: tlavrova230@gmail.com</p>
+          <p>Email: <a href="mailto:tlavrova230@gmail.com">tlavrova230@gmail.com</a></p>
         </div>
 
         <div className="footer-section">
@@ -17,7 +17,9 @@ const Footer: React.FC = () => {
           <nav className="footer-nav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
+            <a href="#testimonials">Testimonials</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>
@@ -32,7 +34,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="copyright">
-        <p>&copy; {currentYear} My Portfolio. All rights reserved.</p>
+        <p>&copy; {currentYear} Tatiana Lavrova. All rights reserved.</p>
       </div>
     </footer>
   );

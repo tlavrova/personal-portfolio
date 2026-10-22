@@ -8,7 +8,7 @@ interface NavMenuProps {
 
 const NavMenu: React.FC<NavMenuProps> = ({ children, isOpen }) => {
   return (
-    <nav className={`nav-menu ${isOpen ? 'open' : 'closed'}`}>
+    <nav id="main-nav" className={`nav-menu ${isOpen ? 'open' : 'closed'}`} aria-label="Main">
       {children}
     </nav>
   );

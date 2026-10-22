@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles/Contact.css';
-import { useTheme } from '../context/ThemeContext';
 import ContactInfo from './ContactInfo';
 import ContactForm, { FormData } from './ContactForm';
 import SuccessMessage from './SuccessMessage';
@@ -14,7 +13,14 @@ const Contact: React.FC = () => {
     });
     const [submitted, setSubmitted] = useState(false);
     const [error, setError] = useState('');
-    const { theme } = useTheme();
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    // Reset success message after 5 seconds
+    useEffect(() => {
+        if (!submitted) return;
+        const timer = setTimeout(() => setSubmitted(false), 5000);
+        return () => clearTimeout(timer);
+    }, [submitted]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -42,6 +48,7 @@ const Contact: React.FC = () => {
 
         // Clear any previous errors
         setError('');
+        setIsSubmitting(true);
 
         // Create form data with additional fields to reduce spam filtering
         const enhancedFormData = {
@@ -77,25 +84,18 @@ const Contact: React.FC = () => {
                 subject: '',
                 message: ''
             });
-
-            // Reset success message after 5 seconds
-            setTimeout(() => {
-                setSubmitted(false);
-            }, 5000);
         })
         .catch(error => {
             console.error('Error sending form:', error);
             setError('Failed to send message. Please try again later.');
-        });
+        })
+        .finally(() => setIsSubmitting(false));
     };
 
     return (
         <section
             id="contact"
             className="contact-section"
-            style={{
-                backgroundColor: 'var(--color-card-bg)',
-            }}
         >
             <div className="contact-content">
                 <h2 className="section-title">Get In Touch</h2>
@@ -108,6 +108,7 @@ const Contact: React.FC = () => {
                             <ContactForm
                                 formData={formData}
                                 error={error}
+                                isSubmitting={isSubmitting}
                                 handleChange={handleChange}
                                 handleSubmit={handleSubmit}
                             />

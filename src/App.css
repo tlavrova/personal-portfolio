@@ -26,22 +26,6 @@ section {
   box-sizing: border-box;
 }
 
-section#home {
-  background-color: var(--color-card-bg);
-}
-
-section#about {
-  background-color: var(--color-bg);
-}
-
-section#projects {
-  background-color: var(--color-card-bg);
-}
-
-section#contact {
-  background-color: var(--color-bg);
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   section {

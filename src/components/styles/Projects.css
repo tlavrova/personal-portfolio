@@ -1,7 +1,7 @@
 /* Projects Section Styling */
 .projects-section {
     padding: 80px 20px;
-    background: var(--color-bg);
+    background: var(--color-card-bg);
 }
 
 .projects-inner {
@@ -101,14 +101,14 @@
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    color: #3498db; /* Updated to consistent blue */
+    color: var(--color-primary);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
 .project-link:hover {
-    color: #2980b9; /* Updated to consistent hover blue */
+    color: var(--color-primary-hover);
 }
 
 /* Responsive adjustments */

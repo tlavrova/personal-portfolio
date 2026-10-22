@@ -21,26 +21,12 @@
 }
 
 .theme-toggle svg {
-  color: #333;
+  color: var(--color-text);
   transition: color 0.3s ease, transform 0.5s ease;
 }
 
 .theme-toggle:hover svg {
   transform: rotate(30deg);
-}
-
-.dark .theme-toggle svg {
-  color: #f1f1f1;
-}
-
-/* Focus styles for accessibility - using background change instead of outline */
-.theme-toggle:focus {
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
-.dark .theme-toggle:focus {
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 768px) {

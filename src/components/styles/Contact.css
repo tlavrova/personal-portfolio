@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-bg);
+    background-color: var(--color-card-bg);
 }
 
 .contact-content {
@@ -63,7 +63,7 @@
 
 .info-icon {
     font-size: 1.5rem;
-    color: #3498db; /* Standardized to the same blue */
+    color: var(--color-primary);
     margin-right: 15px;
     margin-top: 5px;
 }
@@ -91,7 +91,7 @@
 }
 
 .info-item a:hover {
-    color: #3498db;
+    color: var(--color-primary);
     opacity: 1;
 }
 
@@ -109,15 +109,15 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #3498db; /* Ensuring consistency */
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     border-radius: 50%;
     font-size: 1.2rem;
     transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-    background-color: #2980b9; /* Updated to match other hover states */
+    background-color: var(--color-primary-hover);
     transform: translateY(-3px);
 }
 
@@ -157,8 +157,9 @@
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #3498db;
+    border-color: var(--color-primary);
     outline: none;
+    box-shadow: 0 0 0 1px var(--color-primary);
 }
 
 .error-message {
@@ -184,8 +185,8 @@
 }
 
 .submit-button {
-    background-color: #3498db;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
     border: none;
     padding: 12px 25px;
     font-size: 1rem;
@@ -195,8 +196,13 @@
     transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
-    background-color: #2980b9;
+.submit-button:hover:not(:disabled) {
+    background-color: var(--color-primary-hover);
+}
+
+.submit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 /* Responsive adjustments */

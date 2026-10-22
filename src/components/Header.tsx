@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(prev => !prev);
   };
 
   const closeMenu = () => {
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
-      <Logo>My Portfolio</Logo>
+      <Logo>Tatiana Lavrova</Logo>
       <div className="header-right">
         <HamburgerMenu onClick={toggleMenu} isOpen={isMenuOpen} />
       </div>

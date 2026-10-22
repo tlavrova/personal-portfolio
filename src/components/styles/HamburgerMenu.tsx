@@ -8,11 +8,18 @@ interface HamburgerMenuProps {
 
 const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ onClick, isOpen }) => {
   return (
-    <div className={`hamburger-menu ${isOpen ? 'active' : ''}`} onClick={onClick}>
+    <button
+      type="button"
+      className={`hamburger-menu ${isOpen ? 'active' : ''}`}
+      onClick={onClick}
+      aria-label={isOpen ? 'Close menu' : 'Open menu'}
+      aria-expanded={isOpen}
+      aria-controls="main-nav"
+    >
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </button>
   );
 };
 
