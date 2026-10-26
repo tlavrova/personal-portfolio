@@ -28,7 +28,7 @@ export const testimonialsData: Testimonial[] = [
   },
   {
     id: 16,
-    name: "Marco Kamplhuis",
+    name: "Marco Kamphuis",
     role: "Backend Developer",
     company: "Visma Dialog",
     content: "I've had the pleasure of working together with Tatiana for roughly 2.5 years. In that time, I've seen her grow from a good developer to a truly outstanding developer. She considers both the fine details and the bigger picture of the tasks she works on, takes ownership of her work and always delivers quality. Being responsible for several Angular version upgrades & migrations of old code, she ensures that the latest standards & best practices are implemented. On a personal level she is kind, honest and never afraid to help out. I learned a lot from her, and I know that any team would be lucky to have her.",
@@ -85,7 +85,7 @@ export const testimonialsData: Testimonial[] = [
   },
   {
     id: 11,
-    name: "Mittch van Vliet",
+    name: "Mittch Van Vliet",
     role: "Product Manager",
     company: "Visma Dialog",
     content: "It's a pleasure working with you. Over the last few months I've noticed you speaking up a lot more. You're asking the right questions, so please keep that up. We need more of that to move faster while keeping an eye on quality.",
