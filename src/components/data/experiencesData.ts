@@ -4,6 +4,7 @@ export interface Experience {
   company: string;
   website?: string;
   period: string;
+  description?: string;
   technologies: string[];
   responsibilities: string[];
 }
@@ -15,13 +16,17 @@ export const experiencesData: Experience[] = [
     company: "Visma Dialog",
     website: "https://www.dialog.nl/",
     period: "Sep 2022 — Present",
+    description: "HR SaaS platform for performance, talent and engagement management, part of the Visma group.",
     technologies: ["Angular", "TypeScript", "Storybook", "Claude Code", "C#", "ASP.NET", "SQL"],
     responsibilities: [
-      "Worked on AI-powered features for an HR SaaS platform: an AI coaching assistant, AI analysis of engagement surveys and AI-driven talent mapping",
-      "Built the product's design system with Storybook",
-      "Built custom Claude Code skills for automated code review, and used Claude Code in daily development",
-      "Developed frontend features with Angular (up to the latest v22) and TypeScript, covered by unit tests",
+      "Contributed to the development of an AI coaching chat assistant that helps managers prepare and summarize conversations with their team",
+      "Contributed to AI-powered analysis of engagement survey results, turning employee responses into insights and key themes for managers",
+      "Contributed to AI-mapping for talent management: AI-generated suggestions for placing employees on a 9-box grid, with explanations and an interactive drag-and-drop grid",
+      "Upgraded the platform through seven major Angular versions, from Angular 15 to the latest Angular 22, adopting Signals, standalone components, the new control flow and deferrable views",
+      "Developed a design system from scratch with Storybook integration",
+      "Increased unit test coverage, reducing post-release bugs by ~20%",
       "Contributed to backend development with C#, ASP.NET and SQL",
+      "Designed custom Claude Code skills for automated code review against team conventions",
     ],
   },
   {
@@ -35,7 +40,7 @@ export const experiencesData: Experience[] = [
       "Contributed to multiple frontend projects using Angular and React",
       "Improved UI responsiveness and accessibility across core components",
       "Worked closely with design and QA to ensure consistent UX",
-        "Used Git for version control and participated in code reviews"
+      "Used Git for version control and participated in code reviews",
     ],
   },
     {
@@ -51,7 +56,7 @@ export const experiencesData: Experience[] = [
         "Improving and configuring 1C (ERP system) for trade management, accounting, salary and staff management",
         "Developing in 1C programming language",
         "Data manipulation with SQL",
-        "Working with common data formats for data exchange such as XML, CSV."
+        "Working with common data formats for data exchange such as XML, CSV"
         ],
     },
     {
@@ -75,7 +80,7 @@ export const experiencesData: Experience[] = [
         company: "Development and construction company Likos",
         website: "https://likos.ru/",
         period: "Aug 2010 — Aug 2011",
-        technologies: [],
+        technologies: ["1C"],
         responsibilities: [
             "Business process support",
             "Development of new functionality",
@@ -94,7 +99,7 @@ export const experiencesData: Experience[] = [
             "Work with customers to implement and maintain software 1C (ERP system)",
             "Consulting on accounting, tax accounting, payroll",
             "Update of atypical 1C (ERP system) configurations",
-            "Customization of configurations."
+            "Customization of configurations"
         ],
     }
 ];

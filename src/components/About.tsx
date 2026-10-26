@@ -3,6 +3,7 @@ import './styles/About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJsSquare, faReact, faAngular, faGitAlt } from '@fortawesome/free-brands-svg-icons';
 import tsLogo from '../assets/images/typescript-logo.svg';
+import storybookLogo from '../assets/images/storybook-logo.svg';
 
 const About: React.FC = () => {
     return (
@@ -28,8 +29,8 @@ const About: React.FC = () => {
                     <img src={tsLogo} alt="TypeScript" title="TypeScript" className="icon-image"/>
                     <FontAwesomeIcon icon={faReact} size="2x" title="React" />
                     <FontAwesomeIcon icon={faAngular} size="2x" title="Angular" />
+                    <img src={storybookLogo} alt="Storybook" title="Storybook" className="icon-image"/>
                     <FontAwesomeIcon icon={faGitAlt} size="2x" title="Git" />
-                    {/* Add more icons as needed */}
                 </div>
             </div>
         </section>

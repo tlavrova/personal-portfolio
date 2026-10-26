@@ -36,33 +36,33 @@ The list will keep growing.
 - Order `testimonialsData` so the strongest ones come first; optionally add a `featured: true` flag.
 - Move focus to the first newly revealed card for keyboard users.
 
-### Testimonial content (your call)
+### ✅ Testimonial content — done 2026-10-26 (trimmed per CONTENT-DRAFTS; Mikuláš & Sander removed; Duarte & Jorien replaced by their LinkedIn-style recommendations)
 - Several are internal performance-review texts with critical remarks and mention colleagues by name
   (Vitor, Ruben, Anke, Nicole). Consider trimming to short positive excerpts and asking each person
   if they're OK being quoted publicly.
 - Optional: an `excerpt` field shown collapsed, full `content` on "Read more".
 
 ### Add more testimonials (your task)
-- [ ] Collect new feedback (current/former colleagues, managers, clients; LinkedIn recommendations are a good source)
-- [ ] Add each as a new entry in `src/components/data/testimonialsData.ts` (`id`, `name`, `role`, `company`, `content`, optional `image`)
-- [ ] Keep the strongest ones in the first 6 — only those are visible before "View more"
+- [x] Collect new feedback (current/former colleagues, managers, clients; LinkedIn recommendations are a good source)
+- [x] Add each as a new entry in `src/components/data/testimonialsData.ts` (`id`, `name`, `role`, `company`, `content`, optional `image`)
+- [x] Keep the strongest ones in the first 6 — only those are visible before "View more"
 - Aim for variety: different roles and companies, not only Dialog
 
 ### Content review — check every section for outdated info (your task)
 Drafts for the hero intro and trimmed testimonials, plus open questions: [CONTENT-DRAFTS.md](CONTENT-DRAFTS.md).
 Go through the live site section by section and update anything that's no longer accurate.
 - [x] **Hero** — title and intro updated from LinkedIn summary
-- [x] **About** — bio rewritten from LinkedIn summary (skill icons: consider adding Storybook)
+- [x] **About** — bio rewritten from LinkedIn summary (Storybook icon added)
 - [x] **Experience** — Visma Dialog role updated from LinkedIn (title, AI features, design system, Storybook); typos fixed.
-      Still open: Likos tech tags; consider refreshing older bullets
+      Bullets now match LinkedIn (2026-10-26); company blurb shown via new `description` field; Likos tagged 1C
 - [ ] **Visma Dialog end date** — on your last day, change "Sep 2022 — Present" in `experiencesData.ts` to the real end date
-- [ ] **Projects** — descriptions, tech lists, links still working; add newer projects
-- [ ] **Testimonials** — see "Testimonial content" and "Add more testimonials" above
+- [x] **Projects** — nothing new to add
+- [x] **Testimonials** — see "Testimonial content" and "Add more testimonials" above
 - [x] **Contact** — availability text updated ("open to frontend roles in the Netherlands")
 - [x] **Footer & meta** — title, description and Open Graph text in `index.html` updated
 - Data lives in `src/components/data/*.ts`; hero/about/contact text is in the component files
 
-### New profile photo
+### ✅ New profile photo — done 2026-10-26 (head-and-shoulders crop of DSCF7080.jpg; preview screenshot refreshed)
 - Run `npm run photo -- path/to/new-photo.jpg` — resizes, compresses and saves it as `src/assets/images/portfolio-photo.jpg`
 - Square-ish crop with face centred works best in the circle; adjust `object-position` in `Home.css` if needed.
 - Also update `portfolio-preview.jpg` (project card + README) once the new look is final.
@@ -89,7 +89,7 @@ Go through the live site section by section and update anything that's no longer
 - [x] Migrate Create React App (deprecated) → Vite 8; bump TypeScript to 5.9
 - [x] Add a few tests (Contact form validation, theme toggle, testimonials "Read more"/"View more", experience toggle) — Vitest, `npm test`
 - [x] Move `HeaderContainer`, `Logo`, `NavLink`, `NavMenu`, `HamburgerMenu` from `components/styles/` to `components/`
-- [ ] GitHub Action: build + deploy to Pages on push (instead of local `npm run deploy`) — also removes `gh-pages`, the source of the remaining `npm audit` warnings
-- [ ] Add ESLint (CRA bundled it; Vite doesn't) — `typescript-eslint` + `eslint-plugin-react-hooks`
+- [x] GitHub Action: build + deploy to Pages on push (instead of local `npm run deploy`) — also removes `gh-pages`, the source of the remaining `npm audit` warnings
+- [x] Add ESLint (CRA bundled it; Vite doesn't) — `typescript-eslint` + `eslint-plugin-react-hooks`
 - [x] Stop committing `.idea/`
 - [x] `npx update-browserslist-db@latest`

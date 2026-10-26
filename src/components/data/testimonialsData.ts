@@ -11,6 +11,58 @@ export interface Testimonial {
 // Long feedback is trimmed to verbatim excerpts ("…" marks a cut).
 export const testimonialsData: Testimonial[] = [
   {
+    id: 5,
+    name: "Duarte Vital",
+    role: "Software Developer",
+    company: "Visma Dialog",
+    content: "I had the pleasure of working with Tatiana at Dialog. Tatiana is a reliable frontend developer. When something was assigned, I knew it would get done, and done well.\n" +
+        "What stood out most was how Tatiana adopted AI-driven development. Some people avoid these tools and others lean on them too much. Tatiana found the balance. AI sped up the work, and the code that shipped was still clean, tested and maintainable.\n" +
+        "Any team would be lucky to have Tatiana, and I'd happily work together again.",
+  },
+  {
+    id: 14,
+    name: "Martin Campagnoli",
+    role: "Senior Frontend Developer",
+    company: "Visma Dialog",
+    content: "I worked with Tatiana until recently, and I can recommend her as a front-end developer without hesitation. She is highly focused, technically knowledgeable, and delivers quality work. What sets her apart is how well she responds to feedback: she picks it up quickly, applies it thoughtfully, and keeps raising the bar for herself. She's a genuinely great teammate who collaborates easily and makes the people around her better. Her eagerness to learn means she grows fast in any environment. Any team would be lucky to have her, and I'm confident she'll be a strong asset wherever she goes next.",
+  },
+  {
+    id: 16,
+    name: "Marco Kamplhuis",
+    role: "Backend Developer",
+    company: "Visma Dialog",
+    content: "I've had the pleasure of working together with Tatiana for roughly 2.5 years. In that time, I've seen her grow from a good developer to a truly outstanding developer. She considers both the fine details and the bigger picture of the tasks she works on, takes ownership of her work and always delivers quality. Being responsible for several Angular version upgrades & migrations of old code, she ensures that the latest standards & best practices are implemented. On a personal level she is kind, honest and never afraid to help out. I learned a lot from her, and I know that any team would be lucky to have her.",
+  },
+  {
+    id: 2,
+    name: "Jorien van Rijswijk",
+    role: "UX Research & Design",
+    company: "Visma Dialog",
+    content: "I worked closely with Tatiana for almost 4.5 years, with me as PO and designer. She is a skilled, driven frontend developer who turns ideas into polished, working UI, with a sharp eye for detail and design system quality. A highlight was our hackathon on AI in our product: she was a great asset, which contributed to our team winning. In our process we moved from detailed requirements to acceptance criteria, she was honest about her doubts, then took real ownership and thought along from a user perspective. I saw that grow over time and it makes her a really versatile and valuable developer.",
+  },
+  {
+    id: 15,
+    name: "Corne van den Boogert",
+    role: "UX/Product Designer",
+    company: "Visma Dialog",
+    content: "Nobody has made as much progress in six months as Tatiana. I fondly remember delivering my first Design System component when I started at Dialog. She looked at it and said, “That’s so sophisticated!” She doesn’t just inspire the people around her with her humor; she also delivers in high volume with an eye for detail.\n" +
+        "\n" +
+        "Whenever we worked on different parts of the product, Tatiana was my first review buddy. She has a sharp eye for detail and instantly spots when something is missing from my work.\n" +
+        "\n" +
+        "Tatiana isn’t afraid to ask the right questions, whether of colleagues or managers. She’s motivated and works hard to get things delivered. She challenged everyone on the product team to deliver high-quality front-end work, and she succeeded.",
+  },
+  {
+    id: 13,
+    name: "Mary Wolf",
+    role: "Product Owner",
+    company: "Visma Dialog",
+    content: "I had the pleasure of working with Tatiana at Dialog, where she was a Frontend Engineer growing into a more senior role and expanding her expertise into backend development. Although our collaboration was short, her growth was clearly visible, and her drive and ambition stood out to me.\n" +
+        "Tatiana was part of a small team that kicked off the rebuild of one of our modules. There she covered the full scope of full-stack development and worked extensively with AI in her workflow.\n" +
+        "\n" +
+        "What I value most is her honesty and openness in giving feedback. She knows when to look at things critically and when to raise an issue while staying fully committed to the team’s shared goals.\n" +
+        "I can wholeheartedly recommend her to any team.",
+  },
+  {
     id: 4,
     name: "Mariia Aletdinova",
     role: "QA Engineer",
@@ -25,30 +77,32 @@ export const testimonialsData: Testimonial[] = [
     content: "When I'm getting a new story into testing, you have mostly all the answers to my tricky questions and - moreover - the app then behaves as you described … I'm more confident in the quality of our app.",
   },
   {
-    id: 2,
-    name: "Jorien van Rijswijk",
-    role: "UX designer",
+    id: 9,
+    name: "Jesse Buitenhuis",
+    role: "Team lead",
     company: "Visma Dialog",
-    content: "I really enjoyed working together during the hackaton and I think you were a great asset to that team. That came with results as well, because we won 🔥\n" +
-        "I noticed that at the start you were not a fan of the change from requirements to acceptance criteria. I thought it was good that you communicated that, but it could have been brought a little more subtle I think. Afterwards I think you embraced it more and I saw that you felt more ownership to think along about the features from a user perspective. I think that is very positive and I only saw that happening more and more. 😊",
+    content: "I'm so impressed by your attitude and progress … Almost every day I see you're contributing, taking initiative and collaborating. Not only within the entire product team, but also outside of it. … you're open to learning new things and have adopted the new Angular framework and way of working right away. … you are an early adopter of AI within the team and are using it quite a lot for coding and technical plans.",
+  },
+  {
+    id: 11,
+    name: "Mittch van Vliet",
+    role: "Product Manager",
+    company: "Visma Dialog",
+    content: "It's a pleasure working with you. Over the last few months I've noticed you speaking up a lot more. You're asking the right questions, so please keep that up. We need more of that to move faster while keeping an eye on quality.",
+  },
+  {
+    id: 10,
+    name: "Łukasz Ambryszewski",
+    role: "Backend Developer",
+    company: "Visma Dialog",
+    content: "I really like how you treat FE and try to make it much better environment. You've done already a lot of hard work with migrating stores and updating Angular. … continue pushing boy scouting rules on reviews … this is really a great rule which you and Martin implemented and you should stick to it.",
   },
   {
     id: 3,
     name: "Nicole Boer",
     role: "Product Manager",
     company: "Visma Dialog",
-    content: "Hi! I've really noticed how much you've grown over the past few months. You consistently hit your sprint goals and communicate proactively when issues come up, which really helps everything run smoothly.\n" +
-        "\n" +
-        "I also really appreciate your input on the AI project. I love how quickly things come together. One area I think you could make an even bigger impact is taking a bit more ownership during the sessions to shape the final product. I believe that could really help push the quality even further.\n" +
-        "\n" +
-        "I've also seen you pairing up with Vitor, and that collaboration seems to be working really well, definitely keep that going! Let's keep up the great work!",
-  },
-  {
-    id: 5,
-    name: "Duarte Vital",
-    role: "Backend Developer",
-    company: "Visma Dialog",
-    content: "Been a pleasure working in AI features with Tatiana. Brainstorming and implementing these feature went pretty smoothly thanks to our consistent teamwork.",
+    content: "You consistently hit your sprint goals and communicate proactively when issues come up, which really helps everything run smoothly. … I love how quickly things come together.",
   },
   {
     id: 6,
@@ -57,34 +111,4 @@ export const testimonialsData: Testimonial[] = [
     company: "Visma Dialog",
     content: "Great work with the ai feature, looks awesome visually, and I like how the code looks, very easy to work with, simple to read.",
   },
-  {
-    id: 7,
-    name: "Mikuláš van der Horst",
-    role: "Fullstack Developer",
-    company: "Visma Dialog",
-    content: "Hey good luck,\n" +
-        "Just wanted to leave some comments, it took some time but I feel like you have made giant leaps in your coding ability since you started at dialog. I think you are improving well towards being a good developer.",
-  },
-  {
-    id: 8,
-    name: "Sander Weerdenburg",
-    role: "Backend Developer",
-    company: "Visma Dialog",
-    content: "Good job on bugging me about required backend work for your frontend tickets!",
-  },
-    {id: 9,
-    name: "Jesse Buitenhuis",
-    role: "Team lead",
-    company: "Visma Dialog",
-    content: "I wanted to start with a big compliment. I'm so impressed by your attitude and progress over the last two months! We've had some discussions at the end of August which were not easy, but I'm so happy we (Dialog) are keep working together in the next years! You really listened to the feedback we gave you around contributing more visible towards the company goals & values. Almost every day I see you're contributing, taking initiative and collaborating. Not only within the entire product team, but also outside of it. This is not only coming from me, I also know Ruben sees and experiences this as well.\n" +
-        "\n" +
-        "One tip: keep being open and honest to the team and especially Anke/Ruben - also when you're not happy with anything. There's room for that and it will only help you and them to grow faster.\n" +
-        "\n" +
-        "As a developer, you've really grown to the medior role (now updated in Dialog 😎). You are taking on more responsibility, you're open to learning new things and have adopted the new Angular framework and way of working right away. There's ofcourse still room for improvement - how can we improve our frontend code so it becomes easier/faster to make changes? By having some clear ideas around this you can put these on the team agenda / backlog and help the team forward. Tip: use your future new frontend colleague(s) and/or tech lead to discuss this question and learn from them (or inspire them!).\n" +
-        "\n" +
-        "As a team player you communicate well about progress and obstacles. I got this feedback explicitly from Nicole when she left, she found it very easy to work with you as a product owner. There's still some room for improvement in taking initiative for improvements - for instance during retro's you are usually quite brief, even though I'm sure you must have things that you would like to have improved.\n" +
-        "\n" +
-        "Lastly - you are an early adopter of AI within the team and are using it quite a lot for coding and technical plans. (And maybe some lines in this evaluation? 😇). Keep it up, and also inspire those around you. Show what you achieve and what helps you!\n" +
-        "\n" +
-        "I'll keep an eye on the team and I'm looking forward to see you grow even more in the next few years. Have fun!",}
 ];

@@ -9,7 +9,7 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
-  const { jobTitle, company, website, period, technologies, responsibilities } = experience;
+  const { jobTitle, company, website, period, description, technologies, responsibilities } = experience;
 
   return (
     <div className="experience-card">
@@ -26,6 +26,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           <span className="company-name">{company}</span>
         )}
       </div>
+
+      {description && <p className="experience-description">{description}</p>}
 
       {technologies.length > 0 && (
         <div className="tech-badges">

@@ -6,7 +6,7 @@ export default defineConfig({
   base: '/personal-portfolio/',
   plugins: [react()],
   build: {
-    // gh-pages deploys this folder (see "deploy" script)
+    // Deployed to GitHub Pages by .github/workflows/deploy.yml
     outDir: 'build',
   },
   server: {

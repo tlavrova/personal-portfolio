@@ -74,7 +74,9 @@ src/
 - **`npm run preview`**: Serves the production build locally
 - **`npm run typecheck`**: Runs the TypeScript compiler without emitting
 - **`npm test`**: Runs the test suite once (Vitest); **`npm run test:watch`** re-runs on changes
-- **`npm run deploy`**: Deploys the app to GitHub Pages
+- **`npm run lint`**: Lints the code with ESLint
+
+Pushing to `master` lints, tests, builds and deploys to GitHub Pages (`.github/workflows/deploy.yml`).
 
 ## 📱 Responsive Design
 
