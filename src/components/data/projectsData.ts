@@ -2,6 +2,7 @@ import portfolioPreview from '../../assets/images/portfolio-preview.jpg';
 import recipeFinder from '../../assets/images/recipe-finder.jpg';
 import weatherApp from '../../assets/images/weather-app.png';
 import todoList from '../../assets/images/todo-list.png';
+import girlsAgent from '../../assets/images/girls-agent.svg';
 
 export interface Project {
     id: number;
@@ -49,5 +50,13 @@ export const projectsData: Project[] = [
         image: todoList,
         github: "https://github.com/tlavrova/todo-list",
         liveDemo: "https://tlavrova.github.io/todo-list"
+    },
+    {
+        id: 5,
+        title: "Gigi, the Girls Agent",
+        description: "A Telegram bot that organizes meetups for a group of friends: monthly date polls, reminders for non-voters, activity suggestions, a shared agenda and LLM-powered chat replies.",
+        technologies: ["Python", "python-telegram-bot", "SQLite", "Gemini API", "Docker", "GitHub Actions"],
+        image: girlsAgent,
+        github: "https://github.com/tlavrova/girls-agent"
     },
 ];

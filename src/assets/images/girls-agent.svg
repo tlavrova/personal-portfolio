@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbc2eb"/>
+      <stop offset="1" stop-color="#a6c1ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <g font-family="Helvetica, Arial, sans-serif">
+    <!-- incoming bot message with poll -->
+    <circle cx="150" cy="120" r="30" fill="#ff6fa8"/>
+    <text x="150" y="131" font-size="30" text-anchor="middle" fill="#fff" font-weight="bold">G</text>
+    <rect x="200" y="80" width="380" height="170" rx="22" fill="#fff"/>
+    <text x="226" y="118" font-size="22" font-weight="bold" fill="#ff4f93">Gigi</text>
+    <text x="226" y="150" font-size="20" fill="#333">When do we meet next month?</text>
+    <rect x="226" y="168" width="328" height="26" rx="13" fill="#f1f1f5"/>
+    <rect x="226" y="168" width="230" height="26" rx="13" fill="#ffb3d1"/>
+    <text x="240" y="187" font-size="16" fill="#333">Sat 14</text>
+    <rect x="226" y="204" width="328" height="26" rx="13" fill="#f1f1f5"/>
+    <rect x="226" y="204" width="110" height="26" rx="13" fill="#ffb3d1"/>
+    <text x="240" y="223" font-size="16" fill="#333">Sun 15</text>
+    <!-- outgoing reply -->
+    <rect x="330" y="285" width="320" height="70" rx="22" fill="#5b8def"/>
+    <text x="356" y="328" font-size="20" fill="#fff">Saturday works for me! 💖</text>
+  </g>
+</svg>
